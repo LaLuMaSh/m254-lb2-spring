@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="ch.lush.m254lb2spring.ProcessTest" time="0.002" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="ch.lush.m254lb2spring.ProcessTest" time="0.003" errors="1" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -64,7 +64,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="ch.lush.m254lb2spring.ProcessTest" name="testHappyPath" time="0.002">
+  <testcase classname="ch.lush.m254lb2spring.ProcessTest" name="testHappyPath" time="0.003">
     <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -129,12 +129,12 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 51 more
 </error>
-    <system-out>11:21:48.716 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ch.lush.m254lb2spring.ProcessTest], using SpringBootContextLoader
-11:21:48.717 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ch.lush.m254lb2spring.ProcessTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-11:21:48.717 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ch.lush.m254lb2spring.ProcessTest]: ProcessTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:21:48.724 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ch.lush.m254lb2spring.CamundaApplication for test class ch.lush.m254lb2spring.ProcessTest
-11:21:48.728 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-11:21:48.729 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@66b62ebd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5440a3a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@18cb4ed1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@10abd94f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47bfde21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@628f0936, org.springframework.test.context.transaction.TransactionalTestExecutionListener@20706e70, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6e5fba90, org.springframework.test.context.event.EventPublishingTestExecutionListener@57283fac, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4d745ac6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e54bef6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7dcc0296, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b8f87dc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4c25201, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4faaff61]
+    <system-out>11:23:42.726 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ch.lush.m254lb2spring.ProcessTest], using SpringBootContextLoader
+11:23:42.728 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ch.lush.m254lb2spring.ProcessTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:23:42.728 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ch.lush.m254lb2spring.ProcessTest]: ProcessTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:23:42.731 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ch.lush.m254lb2spring.CamundaApplication for test class ch.lush.m254lb2spring.ProcessTest
+11:23:42.734 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:23:42.734 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@18cb4ed1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@10abd94f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@47bfde21, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@628f0936, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@20706e70, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e5fba90, org.springframework.test.context.transaction.TransactionalTestExecutionListener@57283fac, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d745ac6, org.springframework.test.context.event.EventPublishingTestExecutionListener@6e54bef6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7dcc0296, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6b8f87dc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c25201, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4faaff61, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@526f8cb0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@45494046]
 
  ____                                 _         ____  _       _    __                      
 / ___| __ _ _ __ ___  _   _ _ __   __| | __ _  |  _ \| | __ _| |_ / _| ___  _ __ _ __ ___  
@@ -146,106 +146,106 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
   Camunda Platform: (v7.16.0)
   Camunda Platform Spring Boot Starter: (v7.16.0)
 
-11:21:48.777 [main] INFO  ch.lush.m254lb2spring.ProcessTest - Starting ProcessTest using Java 11.0.13 on NBPLGU02 with PID 20664 (started by LGU in C:\projects\tbz\m254-lb2-spring)
-11:21:48.777 [main] DEBUG ch.lush.m254lb2spring.ProcessTest - Running with Spring Boot v2.5.4, Spring v5.3.9
-11:21:48.778 [main] INFO  ch.lush.m254lb2spring.ProcessTest - No active profile set, falling back to default profiles: default
-11:21:49.236 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09
-11:21:49.378 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin &apos;CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, disableDeploymentResourcePattern, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]&apos; activated on process engine &apos;default&apos;
-11:21:49.378 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
-11:21:49.378 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
-11:21:49.378 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
-11:21:49.378 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
-11:21:49.378 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
-11:21:49.381 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;http-connector&apos; and class &apos;org.camunda.connect.httpclient.impl.HttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl&apos;
-11:21:49.382 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;soap-http-connector&apos; and class &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl&apos;
-11:21:49.384 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
-11:21:49.385 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
-11:21:49.386 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
-11:21:49.386 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
-11:21:49.390 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
-11:21:49.390 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@2caa9666, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@263f6e96)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@49741e80, clock: SystemClock, configuration: Configuration(false)]
-11:21:49.393 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-3 - configuration:
-11:21:49.394 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
-11:21:49.394 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit................................true
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog................................none
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource................................none
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=&lt;masked&gt;}
-11:21:49.395 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................................&quot;org.h2.Driver&quot;
-11:21:49.396 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
-11:21:49.396 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
-11:21:49.396 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
-11:21:49.396 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
-11:21:49.396 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
-11:21:49.396 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
-11:21:49.397 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:h2:mem:camunda-spring-boot-test;DB_CLOSE_ON_EXIT=false
-11:21:49.397 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
-11:21:49.397 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
-11:21:49.397 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
-11:21:49.397 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
-11:21:49.397 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry................................none
-11:21:49.398 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle................................10
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - password................................&lt;masked&gt;
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName................................&quot;HikariPool-3&quot;
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly................................false
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans................................false
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema................................none
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory................................internal
-11:21:49.399 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
-11:21:49.400 [main] DEBUG com.zaxxer.hikari.HikariConfig - username................................&quot;sa&quot;
-11:21:49.400 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
-11:21:49.400 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
-11:21:49.402 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.403 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
-11:21:49.503 [HikariPool-3 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Pool stats (total=1, active=0, idle=1, waiting=0)
-11:21:49.505 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn21: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.505 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn22: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.506 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn23: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.507 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn24: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.507 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn25: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.507 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn26: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.508 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn27: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.509 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn28: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.509 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn29: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:49.509 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - After adding stats (total=10, active=0, idle=10, waiting=0)
-11:21:51.347 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql&apos;
-11:21:51.381 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql&apos;
-11:21:51.390 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;identity&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql&apos;
-11:21:51.403 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql&apos;
-11:21:51.408 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql&apos;
-11:21:51.413 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql&apos;
-11:21:51.423 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql&apos;
-11:21:51.425 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
-11:21:51.425 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
-11:21:51.463 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
-11:21:51.623 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
-11:21:51.624 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
-11:21:51.630 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;camundaBpmRestInitializer&apos; defined in class path resource [org/camunda/bpm/spring/boot/starter/rest/CamundaBpmRestJerseyAutoConfiguration.class]: Unsatisfied dependency expressed through method &apos;camundaBpmRestInitializer&apos; parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;org.springframework.boot.autoconfigure.web.servlet.JerseyApplicationPath&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-11:21:51.639 [main] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
-11:21:51.639 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-11:21:51.639 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
-11:21:51.641 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn20: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.642 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn21: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.642 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn22: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.643 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn23: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.643 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn24: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.644 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn25: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.645 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn26: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.646 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn27: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.647 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn28: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.648 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn29: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:51.650 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
-11:21:51.651 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-11:21:51.657 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+11:23:42.777 [main] INFO  ch.lush.m254lb2spring.ProcessTest - Starting ProcessTest using Java 11.0.13 on NBPLGU02 with PID 21296 (started by LGU in C:\projects\tbz\m254-lb2-spring)
+11:23:42.777 [main] DEBUG ch.lush.m254lb2spring.ProcessTest - Running with Spring Boot v2.5.4, Spring v5.3.9
+11:23:42.778 [main] INFO  ch.lush.m254lb2spring.ProcessTest - No active profile set, falling back to default profiles: default
+11:23:43.105 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09
+11:23:43.206 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin &apos;CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, disableDeploymentResourcePattern, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]&apos; activated on process engine &apos;default&apos;
+11:23:43.206 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
+11:23:43.206 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+11:23:43.206 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+11:23:43.206 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+11:23:43.206 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+11:23:43.208 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;http-connector&apos; and class &apos;org.camunda.connect.httpclient.impl.HttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl&apos;
+11:23:43.208 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;soap-http-connector&apos; and class &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl&apos;
+11:23:43.210 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+11:23:43.211 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+11:23:43.213 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+11:23:43.213 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+11:23:43.215 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+11:23:43.215 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@49741e80, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@414d466e)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@39acf187, clock: SystemClock, configuration: Configuration(false)]
+11:23:43.218 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-3 - configuration:
+11:23:43.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
+11:23:43.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit................................true
+11:23:43.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog................................none
+11:23:43.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
+11:23:43.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
+11:23:43.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
+11:23:43.219 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource................................none
+11:23:43.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
+11:23:43.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
+11:23:43.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=&lt;masked&gt;}
+11:23:43.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................................&quot;org.h2.Driver&quot;
+11:23:43.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
+11:23:43.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
+11:23:43.220 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
+11:23:43.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
+11:23:43.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
+11:23:43.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
+11:23:43.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:h2:mem:camunda-spring-boot-test;DB_CLOSE_ON_EXIT=false
+11:23:43.221 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry................................none
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle................................10
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - password................................&lt;masked&gt;
+11:23:43.222 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName................................&quot;HikariPool-3&quot;
+11:23:43.223 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly................................false
+11:23:43.223 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans................................false
+11:23:43.223 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
+11:23:43.223 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema................................none
+11:23:43.223 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory................................internal
+11:23:43.223 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
+11:23:43.223 [main] DEBUG com.zaxxer.hikari.HikariConfig - username................................&quot;sa&quot;
+11:23:43.224 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
+11:23:43.224 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+11:23:43.226 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.226 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+11:23:43.327 [HikariPool-3 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Pool stats (total=1, active=0, idle=1, waiting=0)
+11:23:43.330 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn21: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.330 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn22: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.331 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn23: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.332 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn24: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.333 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn25: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.333 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn26: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.334 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn27: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.334 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn28: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.335 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn29: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:43.335 [HikariPool-3 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - After adding stats (total=10, active=0, idle=10, waiting=0)
+11:23:45.024 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql&apos;
+11:23:45.054 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql&apos;
+11:23:45.064 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;identity&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql&apos;
+11:23:45.079 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql&apos;
+11:23:45.083 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql&apos;
+11:23:45.088 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql&apos;
+11:23:45.099 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql&apos;
+11:23:45.101 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
+11:23:45.102 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+11:23:45.135 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+11:23:45.256 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+11:23:45.257 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+11:23:45.261 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;camundaBpmRestInitializer&apos; defined in class path resource [org/camunda/bpm/spring/boot/starter/rest/CamundaBpmRestJerseyAutoConfiguration.class]: Unsatisfied dependency expressed through method &apos;camundaBpmRestInitializer&apos; parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;org.springframework.boot.autoconfigure.web.servlet.JerseyApplicationPath&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+11:23:45.273 [main] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+11:23:45.273 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+11:23:45.273 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+11:23:45.274 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn20: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.275 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn21: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.275 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn22: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.276 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn23: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.276 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn24: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.276 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn25: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.277 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn26: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.277 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn27: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.277 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn28: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.277 [HikariPool-3 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-3 - Closing connection conn29: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:45.278 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+11:23:45.278 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+11:23:45.284 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with &apos;debug&apos; enabled.
-11:21:51.659 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+11:23:45.287 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -271,106 +271,106 @@ Consider defining a bean of type &apos;org.springframework.boot.autoconfigure.we
   Camunda Platform: (v7.16.0)
   Camunda Platform Spring Boot Starter: (v7.16.0)
 
-11:21:51.704 [main] INFO  ch.lush.m254lb2spring.ProcessTest - Starting ProcessTest using Java 11.0.13 on NBPLGU02 with PID 20664 (started by LGU in C:\projects\tbz\m254-lb2-spring)
-11:21:51.704 [main] DEBUG ch.lush.m254lb2spring.ProcessTest - Running with Spring Boot v2.5.4, Spring v5.3.9
-11:21:51.704 [main] INFO  ch.lush.m254lb2spring.ProcessTest - No active profile set, falling back to default profiles: default
-11:21:52.036 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09
-11:21:52.124 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin &apos;CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, disableDeploymentResourcePattern, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]&apos; activated on process engine &apos;default&apos;
-11:21:52.124 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
-11:21:52.124 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
-11:21:52.124 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
-11:21:52.124 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
-11:21:52.124 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
-11:21:52.126 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;http-connector&apos; and class &apos;org.camunda.connect.httpclient.impl.HttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl&apos;
-11:21:52.127 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;soap-http-connector&apos; and class &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl&apos;
-11:21:52.128 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
-11:21:52.129 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
-11:21:52.130 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
-11:21:52.130 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
-11:21:52.133 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
-11:21:52.133 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@2468c0e4, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@49994a4)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@1a82453, clock: SystemClock, configuration: Configuration(false)]
-11:21:52.136 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-4 - configuration:
-11:21:52.136 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
-11:21:52.136 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit................................true
-11:21:52.136 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog................................none
-11:21:52.136 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
-11:21:52.136 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
-11:21:52.136 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource................................none
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=&lt;masked&gt;}
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................................&quot;org.h2.Driver&quot;
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
-11:21:52.137 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
-11:21:52.138 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
-11:21:52.138 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
-11:21:52.138 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:h2:mem:camunda-spring-boot-test;DB_CLOSE_ON_EXIT=false
-11:21:52.138 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
-11:21:52.138 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry................................none
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle................................10
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - password................................&lt;masked&gt;
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName................................&quot;HikariPool-4&quot;
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly................................false
-11:21:52.139 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans................................false
-11:21:52.140 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
-11:21:52.140 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema................................none
-11:21:52.140 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory................................internal
-11:21:52.140 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
-11:21:52.140 [main] DEBUG com.zaxxer.hikari.HikariConfig - username................................&quot;sa&quot;
-11:21:52.140 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
-11:21:52.140 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
-11:21:52.143 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.143 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
-11:21:52.244 [HikariPool-4 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Pool stats (total=1, active=0, idle=1, waiting=0)
-11:21:52.246 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn31: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.248 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn32: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.249 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn33: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.250 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn34: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.251 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn35: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.252 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn36: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.252 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn37: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.253 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn38: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.253 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn39: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
-11:21:52.254 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - After adding stats (total=10, active=0, idle=10, waiting=0)
-11:21:54.280 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql&apos;
-11:21:54.301 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql&apos;
-11:21:54.311 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;identity&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql&apos;
-11:21:54.326 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql&apos;
-11:21:54.331 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql&apos;
-11:21:54.338 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql&apos;
-11:21:54.345 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql&apos;
-11:21:54.347 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
-11:21:54.347 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
-11:21:54.365 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
-11:21:54.481 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
-11:21:54.482 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
-11:21:54.485 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;camundaBpmRestInitializer&apos; defined in class path resource [org/camunda/bpm/spring/boot/starter/rest/CamundaBpmRestJerseyAutoConfiguration.class]: Unsatisfied dependency expressed through method &apos;camundaBpmRestInitializer&apos; parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;org.springframework.boot.autoconfigure.web.servlet.JerseyApplicationPath&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-11:21:54.498 [main] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
-11:21:54.498 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
-11:21:54.499 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
-11:21:54.500 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn30: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.501 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn31: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.501 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn32: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.502 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn33: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.502 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn34: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.502 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn35: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.503 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn36: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.503 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn37: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.504 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn38: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.504 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn39: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
-11:21:54.506 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
-11:21:54.506 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
-11:21:54.509 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+11:23:45.336 [main] INFO  ch.lush.m254lb2spring.ProcessTest - Starting ProcessTest using Java 11.0.13 on NBPLGU02 with PID 21296 (started by LGU in C:\projects\tbz\m254-lb2-spring)
+11:23:45.336 [main] DEBUG ch.lush.m254lb2spring.ProcessTest - Running with Spring Boot v2.5.4, Spring v5.3.9
+11:23:45.336 [main] INFO  ch.lush.m254lb2spring.ProcessTest - No active profile set, falling back to default profiles: default
+11:23:45.630 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09
+11:23:45.729 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin &apos;CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, failedJobConfiguration, disableDeploymentResourcePattern, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]&apos; activated on process engine &apos;default&apos;
+11:23:45.729 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB020 ProcessApplication enabled: autoDeployment via springConfiguration#deploymentResourcePattern is disabled
+11:23:45.730 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+11:23:45.730 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+11:23:45.730 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+11:23:45.730 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+11:23:45.732 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;http-connector&apos; and class &apos;org.camunda.connect.httpclient.impl.HttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl&apos;
+11:23:45.733 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id &apos;soap-http-connector&apos; and class &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl&apos;: &apos;org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl&apos;
+11:23:45.734 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+11:23:45.735 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+11:23:45.736 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+11:23:45.736 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+11:23:45.738 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+11:23:45.738 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@1a82453, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@3df54fd5)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@5ff8d76f, clock: SystemClock, configuration: Configuration(false)]
+11:23:45.741 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-4 - configuration:
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit................................true
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog................................none
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource................................none
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
+11:23:45.742 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=&lt;masked&gt;}
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................................&quot;org.h2.Driver&quot;
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:h2:mem:camunda-spring-boot-test;DB_CLOSE_ON_EXIT=false
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
+11:23:45.743 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry................................none
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle................................10
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - password................................&lt;masked&gt;
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName................................&quot;HikariPool-4&quot;
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly................................false
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans................................false
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema................................none
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory................................internal
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - username................................&quot;sa&quot;
+11:23:45.744 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
+11:23:45.744 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+11:23:45.747 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.747 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+11:23:45.849 [HikariPool-4 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Pool stats (total=1, active=0, idle=1, waiting=0)
+11:23:45.851 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn31: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.907 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn32: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.907 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn33: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.908 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn34: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.908 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn35: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.909 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn36: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.909 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn37: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.909 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn38: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.910 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn39: url=jdbc:h2:mem:camunda-spring-boot-test user=SA
+11:23:45.910 [HikariPool-4 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - After adding stats (total=10, active=0, idle=10, waiting=0)
+11:23:47.615 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql&apos;
+11:23:47.636 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql&apos;
+11:23:47.646 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;identity&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql&apos;
+11:23:47.658 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql&apos;
+11:23:47.662 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;case.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql&apos;
+11:23:47.667 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.engine&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql&apos;
+11:23:47.673 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation &apos;create&apos; on component &apos;decision.history&apos; with resource &apos;org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql&apos;
+11:23:47.675 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
+11:23:47.675 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+11:23:47.697 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+11:23:47.820 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+11:23:47.821 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+11:23:47.826 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;camundaBpmRestInitializer&apos; defined in class path resource [org/camunda/bpm/spring/boot/starter/rest/CamundaBpmRestJerseyAutoConfiguration.class]: Unsatisfied dependency expressed through method &apos;camundaBpmRestInitializer&apos; parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;org.springframework.boot.autoconfigure.web.servlet.JerseyApplicationPath&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+11:23:47.837 [main] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+11:23:47.838 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+11:23:47.838 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+11:23:47.839 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn30: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.840 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn31: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.840 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn32: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.840 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn33: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.841 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn34: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.841 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn35: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.841 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn36: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.842 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn37: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.842 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn38: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.842 [HikariPool-4 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-4 - Closing connection conn39: url=jdbc:h2:mem:camunda-spring-boot-test user=SA: (connection evicted)
+11:23:47.843 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+11:23:47.844 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+11:23:47.847 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with &apos;debug&apos; enabled.
-11:21:54.511 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+11:23:47.852 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -385,7 +385,7 @@ Action:
 
 Consider defining a bean of type &apos;org.springframework.boot.autoconfigure.web.servlet.JerseyApplicationPath&apos; in your configuration.
 
-11:21:54.512 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47bfde21] to prepare test instance [ch.lush.m254lb2spring.ProcessTest@26a004ed]
+11:23:47.852 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@20706e70] to prepare test instance [ch.lush.m254lb2spring.ProcessTest@75b6bd41]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ch.lush.m254lb2spring.ProcessTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.765 sec <<< FAILURE!
-testHappyPath(ch.lush.m254lb2spring.ProcessTest)  Time elapsed: 0.002 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.099 sec <<< FAILURE!
+testHappyPath(ch.lush.m254lb2spring.ProcessTest)  Time elapsed: 0.003 sec  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
