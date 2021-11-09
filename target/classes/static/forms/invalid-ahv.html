@@ -1,0 +1,22 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label">Fehler</label>
+    <div class="controls">
+     <div id="someDiv"
+     >
+
+     </div>
+    </div>
+  </div>
+
+  <script cam-script type="text/form-script">
+    var div = document.getElementById("someDiv")
+    camForm.on('form-loaded', function() {
+          // tell the form SDK to fetch the variable named 'customer'
+          camForm.variableManager.fetchVariable('errorMsg');
+    });
+    camForm.on('variables-fetched', function() {
+          div.innerHTML = camForm.variableManager.variableValue('errorMsg').replace(";", "\n");
+        });
+  </script>
+</form>

@@ -1,0 +1,29 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label">Name</label>
+    <div class="controls">
+     <select id="someSelect"
+             cam-variable-name="selectedDate"
+             cam-variable-type="String"
+     >
+
+     </select>
+    </div>
+  </div>
+
+  <script cam-script type="text/form-script">
+    var select = document.getElementById("someSelect")
+    camForm.on('form-loaded', function() {
+          // tell the form SDK to fetch the variable named 'customer'
+          camForm.variableManager.fetchVariable('dates');
+    });
+    camForm.on('variables-fetched', function() {
+          camForm.variableManager.variableValue('dates').split(';').forEach(e => {
+            var opt = document.createElement('option');
+            opt.value = e;
+            opt.innerHTML = e;
+            select.appendChild(opt)
+          })
+        });
+  </script>
+</form>

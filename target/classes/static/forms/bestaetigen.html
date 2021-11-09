@@ -1,0 +1,22 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label">Wollen Sie Das Datum bestätigen?</label>
+    <div class="controls">
+     <div id="someDiv">
+     </div>
+        <input type="checkbox"
+               cam-variable-name="appointmentApproved"
+               cam-variable-type="Boolean">
+    </div>
+  </div>
+
+  <script cam-script type="text/form-script">
+    var div = document.getElementById("someDiv")
+    camForm.on('form-loaded', function() {
+          camForm.variableManager.fetchVariable('selectedDate');
+    });
+    camForm.on('variables-fetched', function() {
+          div.innerHTML = camForm.variableManager.variableValue('selectedDate').replace(";", "\n");
+        });
+  </script>
+</form>
